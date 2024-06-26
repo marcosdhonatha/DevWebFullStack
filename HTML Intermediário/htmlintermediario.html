@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<head>
+    <title>HTML Intermediário</title>
+</head>
+
+<body>
+    <h1>Módulo de HTML Intermediário</h1>
+    <h2>Formulários:</h2>
+    <xmp>
+        <form method="get" action="\cadastro">
+            Digite seu nome: <br>
+            <input type="text" name="email"><br>
+            Digite seu email: <br>
+            <input type="text" name="nome"> <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+    </xmp>
+    <form method="get" action="\cadastro">
+        Digite seu nome: <br>
+        <input type="text" name="email"><br>
+        Digite seu email: <br>
+        <input type="text" name="nome"> <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr size="1" style="border-top: 1px dashed rgb(0, 0, 0);">
+    <h3>Criando um visualizador de videos no youtube:</h3>
+    <xmp>
+        <form method="get" action="https://www.youtube.com/watch">
+            <input type="text" name="v">
+            <input type="submit">
+        </form>
+
+
+    </xmp>
+    <code>
+    O segredo é colocar o nome do camopi do formulário como "v" tal qual é feito no 
+    youtube.
+    <br>
+    Além, disso o valor informado deve ser válido para algum video do youtube. <br><br>
+Ex: q_xeCu3P9hU
+
+</code>
+    <form method="get" action="https://www.youtube.com/watch">
+        <input type="text" name="v">
+        <input type="submit">
+    </form>
+    <hr size="1" style="border-top: 1px dashed rgb(0, 0, 0);">
+
+    <h3>Criando um buscador de videos no youtube:</h3>
+    <xmp>
+        <form method="get" action="https://www.youtube.com/results">
+            <input type="text" name="search_query">
+            <input type="submit">
+        </form>
+
+    </xmp>
+    <code>
+    Devemos colocar a tag action como "https://www.youtube.com/results"
+    Tal qual é feito no youtube.br <br>
+    Além disso, o campo da busca deve ter o nome de "search_query", como no youtube.
+</code><br><br>
+    <form method="get" action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h2>Tipos de Input</h2>
+    <xmp>
+        type="text"
+        <input type="text" name="text"> <br>
+        type="password
+        <input type="password" name="password"><br>
+        type="checkbox": (Com varias opções de escolha)
+        <input type="checkbox" name="gender" value="fem">
+        <input type="checkbox" name="gender" value="masc"><br>
+        type="checkbox": (Com uma opção de escolha)
+        <input type="radio" name="gender" value="fem">
+        <input type="radio" name="gender" value="masc"><br>
+        Opção já vem marcada:
+        <input checked type="radio" name="opc" value="1"><input type="radio" name="opc" value="2"><br>
+        type="submit"
+        <input type="submit"><br>
+        type="reset"
+        <input type="reset">
+
+
+    </xmp>
+    <form method="get" action="">
+        type="text"
+        <input type="text" name="text"> <br>
+        type="password
+        <input type="password" name="password"><br>
+        type="checkbox": (Com varias opções de escolha)
+        <input type="checkbox" name="gender" value="fem">
+        <input type="checkbox" name="gender" value="masc"><br>
+        type="checkbox": (Com uma opção de escolha)
+        <input type="radio" name="gender" value="fem">
+        <input type="radio" name="gender" value="masc"><br>
+        Opção já vem marcada:
+        <input checked type="radio" name="opc" value="1"><input type="radio" name="opc" value="2"><br>
+        type="submit"
+        <input type="submit"><br>
+        type="reset"
+        <input type="reset">
+    </form>
+
+    <hr>
+
+    <h2>Select</h2>
+
+
+    <xmp>
+        <form action="" method="get">
+
+
+            <select size="5" name="estado">
+                <option value="RJ">Rio de Janeiro</option>
+                <option selected value="MG">Minas Gerais</option>
+                <option value="SP"> São Paulo</option>
+                <option value="ES"> Espirito Santo </option>
+                <option value="BA"> Bahia </option>
+                <option value="RS">Rio Grande do Sul </option>
+                <option value="AM">Amazonas </option>
+                <option value="PA">Pará </option>
+                <option value="GO"> Goiás </option>
+    
+    
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+
+
+
+    </xmp>
+    <code>
+        Podemos colocar a flag  <b>"selected"</b> "selected" em alguma opção para ela ficar selecionada por padrão. <br>
+        Podemos colocar a flag <b>"multiple"</b> na tag do select para permitir multiplas respostas.
+    </code>
+    <form action="" method="get">
+<br><br><br>
+
+        <select size="5" name="estado">
+            <option value="RJ">Rio de Janeiro</option>
+            <option selected value="MG">Minas Gerais</option>
+            <option value="SP"> São Paulo</option>
+            <option value="ES"> Espirito Santo </option>
+            <option value="BA"> Bahia </option>
+            <option value="RS">Rio Grande do Sul </option>
+            <option value="AM">Amazonas </option>
+            <option value="PA">Pará </option>
+            <option value="GO"> Goiás </option>
+
+
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+<hr>
+
+
+
+
+
+
+
+
+    <br><b><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></b>
+</body>
+
+</html>
