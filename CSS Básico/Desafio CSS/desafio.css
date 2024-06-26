@@ -1,0 +1,33 @@
+.card {
+
+    background-image: url("backgorund.png");
+
+    background-image: url("backgorund.png");
+    padding-bottom: 25px;
+
+}
+
+body {
+    font-weight: 100;
+font-family:serif;
+    padding: 0%;
+    margin: 0%;
+
+    background-color: rgb(172, 168, 163);
+}
+
+h1 {
+    padding: 25px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul{
+list-style:none;
+}
