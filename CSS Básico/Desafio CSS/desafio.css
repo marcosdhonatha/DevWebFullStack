@@ -8,8 +8,6 @@
 }
 
 body {
-    font-weight: 100;
-font-family:serif;
     padding: 0%;
     margin: 0%;
 
@@ -17,7 +15,10 @@ font-family:serif;
 }
 
 h1 {
-    padding: 25px;
+    letter-spacing: 4px;
+
+    padding: 25px 0 0 25px;
+    font-weight: normal;
 }
 
 img {
@@ -28,6 +29,7 @@ a {
     text-decoration: none;
     color: black;
 }
-ul{
-list-style:none;
+
+ul {
+    list-style: none;
 }
