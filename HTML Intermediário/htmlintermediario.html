@@ -127,8 +127,8 @@ Ex: q_xeCu3P9hU
                 <option value="AM">Amazonas </option>
                 <option value="PA">Pará </option>
                 <option value="GO"> Goiás </option>
-    
-    
+
+
             </select>
             <input type="submit" value="Enviar">
         </form>
@@ -141,7 +141,7 @@ Ex: q_xeCu3P9hU
         Podemos colocar a flag <b>"multiple"</b> na tag do select para permitir multiplas respostas.
     </code>
     <form action="" method="get">
-<br><br><br>
+        <br><br><br>
 
         <select size="5" name="estado">
             <option value="RJ">Rio de Janeiro</option>
@@ -158,45 +158,86 @@ Ex: q_xeCu3P9hU
         </select>
         <input type="submit" value="Enviar">
     </form>
+    <hr>
+    <h2>Text area</h2>
+
+    <xmp>
+        <form action="" method="get">
+            Assunto: <br>
+            <input type="text" name="assunto"><br>
+            Mensagem: <br>
+            <textarea name="mensagem"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+
+    </xmp>
+
+    <form action="" method="get">
+        Assunto: <br>
+        <input type="text" name="assunto"><br>
+        Mensagem: <br>
+        <textarea name="mensagem"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <hr>
+
+    <h2>Input no HTML 5</h2>
+    <code>
+        Devemos verificar se o navegador da maioria dos usuários tem suporte para alguma das seguintes tags
+    </code><br><br>
+
+    <form action="" method="get">
+        type="color" : <br>
+        <input type="color" name="cor">
+        <br><br>
+        type="date" :<br>
+        <input type="date" name="date"><br><br>
+        type="datetime-local": <br>
+        <input type="datetime-local" name="datahora"><br><br>
+        type="file": <br>
+        <input type="file" name="arquivo">  <b>// post method required</b>
+        <br><br>
+        type="number": <br>
+        <input type="number" min="1" max="10"> <br><br>
+        type="range": <br>
+        <input type="range" min="1" max="10"> <br><br>
+        type="tel": <br>
+        <input type="tel" min="1" max="10" name="telefone"> <br><br>
+        type="email": <br>
+        <input type="email" min="1" max="10" name="email"> <br> <br>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+
 <hr>
-<h2>Text area</h2>
 
-<form action="" method="get">
+<h2>Tags semânticas</h2>
 
-    Assunto: <br>
-<input type="text" name="assunto"><br>
-Mensagem: <br>
-<textarea name="mensagem"></textarea><br>
-
-
-<input type="submit" value="Enviar">
-</form>
+<code>
+    <ul>
+        <li>
+            <em>header:</em>  Cabeçalho da página. 
+        </li><br>
+        <li>
+            <em>main:</em> Uma por página, todo o conteúdo principal deve ficar dentro dela. 
+        </li><br>
+        <li>
+            <em>footer:</em> Rodapé da página.
+        </li><br>
+        <li>
+            <em>section:</em> É bom cada seção do site ter uma tag dessa.
+        </li><br>
+        <li>
+            <em>article:</em> Cada artigo, cada pedaço de texto que faria sentido mesmo fora da página deve ter.
+        </li><br>
+        <li>
+            <em>nav:</em> Navigation, "menu" de navegação.
+        </li>
+    </ul>
+</code>
 <hr>
-
-<h2>Input no HTML 5</h2>
-<form action="" method="get">
-<input type="color" name="cor" >
-<br>
-<input type="date" name="date" ><br>
-<input type="datetime-local" name="datahora" ><br>
-
-<input type="file" name="arquivo" > //method post 
-<br>
-<input type="number" min="1" max="10"> <br>
-<input type="range" min="1" max="10"> <br>
-
-<input type="tel" min="1" max="10" name="telefone"> <br>
-<input type="email" min="1" max="10" name="email"> <br>
-
-
-
-
-    <input type="submit" value="Enviar">
-</form>
-
-
-
-
 
 
 
