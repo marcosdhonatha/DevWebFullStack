@@ -131,7 +131,69 @@ function datas(data) {
 
 console.log(datas())
 /////////////////////////////////////////
-
+console.clear();
 
 //9       ////////////////////////////////
 
+function dados_alunos(alt, idd) {
+    this.altura = alt,
+        this.idade = idd;
+}
+alunos = [];
+alunos.push(new dados_alunos(1.70, 20));
+alunos.push(new dados_alunos(1.90, 20));
+alunos.push(new dados_alunos(1.67, 20));
+alunos.push(new dados_alunos(1.50, 10))
+
+function analise_alunos(alunos) {
+
+    let maior_alt = alunos[0].altura;
+    let menor_alt = alunos[0].altura;
+    let soma_idade = 0;
+    alunos.forEach(element => {
+        soma_idade += element.idade
+        if (element.altura < menor_alt)
+            menor_alt = element.altura;
+        if (element.altura > maior_alt)
+            maior_alt = element.altura
+
+    });
+
+    console.log("Maior idade: " + maior_alt,
+        "\nMenor idade: " + menor_alt, "\nMédia das idades: " + soma_idade / alunos.length)
+}
+analise_alunos(alunos)
+////////////////////////////////////////////
+console.clear();
+
+//10      /////////////////////////////////////////
+
+function padrao(num){
+
+    for(let i=0;i<num;i++){
+        for(let j=0;j<i;j++){
+            console.log("*")
+        }
+
+    }
+}
+
+padrao(5);
+//////////////////////////////
+
+// OUTRA MANEIRA MAIS INTELIGENTE DE FAZER ISSO:
+console.clear()
+function padrao1(num){
+
+   
+
+    for(let j=0;j<num;j++){
+
+        let string="";
+    for(let i=0; i<j+1; i++){
+        string +="*"
+    }
+console.log(string);
+}
+}
+padrao1(5)
