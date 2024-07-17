@@ -130,5 +130,37 @@ var a = new aluno_1("Samuel", 18, 22);
 var b = new aluno_1("Igor", 32, 48);
 console.log(a)
 console.log(b)
+console.clear()
 
 //#########################################//
+
+
+//######## DATAS #############
+
+
+var d = new Date();
+console.log(d);
+
+var da= new Date(2024, 6,23)
+console.log(da)
+
+console.log(d.getDate())
+console.log(d.getMonth())
+console.log(d.getFullYear())
+console.log(d.getDay())
+
+var dias =["dom", "seg", "ter", "qua", "quin", "sex", "sab"]
+console.log(dias[d.getDay()])
+
+console.clear();
+//####################################################//
+
+
+//######## AULA: Const, Let e Var#################
+
+
+var numero= 2;
+let numero2=5;
+const numero3=6;
+console.log(numero, numero2, numero3)
+
