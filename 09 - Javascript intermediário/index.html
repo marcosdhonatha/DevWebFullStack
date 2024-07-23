@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Javascript Intermediário</title>
-        <script src="js/script.js"></script>
 
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Intermediário</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
-        <h1> Módulo: Javascript Intermediário</h1>
-        <h3>Aulas:</h3>
+</head>
 
-        <ol id="lista">
-            <li class="items">Introdução</li>
-            <li class="items">Window</li>
-            <li class="items">Document</li>
-            <li class="items">Document - Parte 2</li>
-            <li class="items">Acessando elementos HTML com JS</li>
-            <code>
+<body>
+
+    <h1> Módulo: Javascript Intermediário</h1>
+    <h3>Aulas:</h3>
+
+    <ol id="lista">
+        <li class="items">Introdução</li>
+        <li class="items">Window</li>
+        <li class="items">Document</li>
+        <li class="items">Document - Parte 2</li>
+        <li class="items">Acessando elementos HTML com JS</li>
+        <code>
                 Pegando elemento pelo ID  <br>
                 let listaOrdenada = document.getElementById("lista") <br>
                 console.log(listaOrdenada) <br>
@@ -31,15 +34,29 @@
                 let items = document.getElementsByTagName("li") <br>
                 console.log(items) <br>
             </code>
-            <li>Modificando Elementos</li>
-            <code> 
+        <li>Modificando Elementos</li>
+        <code>
                 let p = document.getElementById("lista")    <br>
                 p.innnerHTML = "Novo Conteúdo"              <br>
+                <p> Recebe tags HTML também </p>
                 p.innerText = "Conteúdo mais novo"          <br>
                 p.textContent = "Conteúdo novissímo"        <br>
-                
-            </code> 
+            </code>
+        <h4>Modificando atributos:</h4>
+        <code>
+                p.className = "NovoNome"  <br>
+                p.style = "color:blue"     <br>
+                p.getAttribite("atributo")
+                p.setAttribute("atributo", "valor")
+                <p> Isso modifica ou cria um atributo, caso ele não exista</p>
+            </code>
+        <li>Eventos - parte 1 </li>
+        <h5 onclick="alert('Alguém clicou'), this.style.color='red'">Clique aqui</h5>
+        <div class="button" onclick="hiddenButton(this)">Clique aqui</div>
+        <div class="text">- Texto a ser mostrado -</div>
+        <input type="text" onchange="changeText(value)" placeholder="digite o texto a ser mostrado">
 
-        </ol>
-    </body>
+    </ol>
+</body>
+
 </html>
