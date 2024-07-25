@@ -22,3 +22,30 @@ function changeText(text){
     textArea.innerText= text
 
 }
+
+function onmouseOver(elemento){
+elemento.style.backgroundColor = "red"
+
+}
+function onmouseOut(elemento){
+    elemento.style.backgroundColor = "rgb(47, 82, 197)";
+ 
+    }
+
+function events(){
+let elemento= document.getElementById("events3");
+elemento.onclick = onClick
+elemento.addEventListener("mouseover", mouseO)
+elemento.addEventListener("mouseout", mouseT)
+}
+
+function onClick(){
+    body =document.getElementsByTagName("body")[0]
+    body.innerText= "hahahaahah"
+}
+function mouseO(){
+    this.style.backgroundColor = "red"
+}
+function mouseT(){
+this.style.backgroundColor = "white"
+}

@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body onload="events()">
 
     <h1> Módulo: Javascript Intermediário</h1>
     <h3>Aulas:</h3>
@@ -54,8 +54,35 @@
         <h5 onclick="alert('Alguém clicou'), this.style.color='red'">Clique aqui</h5>
         <div class="button" onclick="hiddenButton(this)">Clique aqui</div>
         <div class="text">- Texto a ser mostrado -</div>
-        <input type="text" onchange="changeText(value)" placeholder="digite o texto a ser mostrado">
-        <li>Próxima aula</li>
+        <input type="text" onchange="changeText(value)" placeholder="digite aqui">
+        <li> Eventos - parte 2</li>
+        <ul>
+            <li>onload()</li>
+            Algo vai ser executado após a página estar totalmente carregada.
+            <li>onmouseover()</li>
+            Algo vao ser executado após o mouse estiver sobre o elemento.
+            <li> onmouseout()</li>
+            algo vai ser executado quando o mouse sair do elemento.
+        </ul>
+        <div class="button" onmouseover="onmouseOver(this)" onmouseout="onmouseOut(this)">botão onmouse()</div>
+       <div  id="events3">
+           <li>Eventos - parte 3</li>
+           <ul>
+               <li>Uso do onload()</li>
+               <p>Colocar funções que presisam de elementos que ainda não foram carregados 
+                   para serem "executadas" após o body ter sido carregado.
+               </p>
+               <li>element.onclick = funcaoOnclik</li>
+               Isso é feito no Javascript ou na tag script e a função não precisa de "()"
+               <li>element.addEventListener("mouseover", mouseOver)</li>
+               <li>element.addEventListener("mouseout", mouseOut)</li>
+               <p>Mais uma vez, a função não recebe parênteses e o evento não tem o prefixo "on"</p>
+           </ul>
+       </div>
+       <li> O que é o "this" </li>
+       <p>Ponteiro para o elemento</p>
+       Evita repetições, código limpo. Aconselhável usar sempre que possível.
+       <li> Tirando dúvida sobre parênteses nas funções</li>
     </ol>
 </body>
 
