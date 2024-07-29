@@ -7,10 +7,25 @@
     <title>Javascript Intermediário</title>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body onload="events()">
+
+    <script>
+        window.onload = function () {
+            console.log("aqui")
+
+            let h3s= document.getElementsByTagName("h3")
+            for(let h of h3s){
+                console.log(h)
+                h.addEventListener("click", quemPai)
+            }
+        }
+        function quemPai(e){
+            let t = e.target
+            console.log(t.parentElement)
+        }
+    </script>
 
     <h1> Módulo: Javascript Intermediário</h1>
     <h3>Aulas:</h3>
@@ -83,6 +98,46 @@
        <p>Ponteiro para o elemento</p>
        Evita repetições, código limpo. Aconselhável usar sempre que possível.
        <li> Tirando dúvida sobre parênteses nas funções</li>
+       <li>Comparando as maneiras de criar um evento</li>
+       <ul>
+        <li>
+            <b> addEventListener: </b>
+        </li>
+        <p> Essa função passa o objeto window como elemento this, e para acessar o elemento temos que fazer o elemento.target.</p>
+<li>evento na tag HTML</li>
+<p> A função teve ser passada com parênteses</p>
+       </ul>
+       <li> Elementos pai e filhos</li> <br><br><br>
+       <div id="div1">
+        <h3>Título qualquer 1</h3>
+        <p>Parágrafo qualquer 1</p>
+       </div>
+       <div id="div2">
+        <h3>Título qualquer 2</h3>
+        <p> Parágrafo qualquer 2</p>
+       </div>
+       <p>
+        <xmp>
+            <body onload="events()">
+
+                <script>
+                    window.onload = function () {
+                        console.log("aqui")
+            
+                        let h3s= document.getElementsByTagName("h3")
+                        for(let h of h3s){
+                            console.log(h)
+                            h.addEventListener("click", quemPai)
+                        }
+                    }
+                    function quemPai(e){
+                        let t = e.target
+                        console.log(t.parentElement)
+                    }
+                </script>
+        </xmp>
+       </p>
+       <li>Biblioteca Math</li>
     </ol>
 </body>
 
