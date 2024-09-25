@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="events()">
+<body  onload="carregou()">
 
     <script>
         window.onload = function () {
@@ -141,4 +141,31 @@
     </ol>
 </body>
 
+<h2> Pequeno resumo sobre eventos:</h2>
+<p>Após quase um mês sem estudar desenvolvimento web nesse curso, sinto que preciso de revisar os ultimos conceitos que não ficaram tão claros para mim.</p>
+<h4>Eventos - Parte 1:</h4>
+
+<li>onclick()</li><br>
+
+<button class="button" onclick="clickonbutton(this)">Clique aqui</button><br><br>
+
+<li>onchange()</li> <br>
+
+<h3 id="text" >Texto dinâmico</h3>
+Digite algo aqui: <br>
+<input id="newtext" type="text" onchange="textchange(this)">
+
+
+<h4>Eventos - Parte 2:</h4>
+<li>onload()</li>
+<li>onmouseover()</li><br>
+
+<button class="button" onmouseover="mouseover(this)" onmouseout="mouseout(this)"> mouse </button>
+
+<h4>Eventos - Parte 3:</h4>
+
+<h4 id="textoqualquer">Texto qualquer</h4>
+
+
+<br><br><br><br> <br><br><br><br><br><br><br>
 </html>

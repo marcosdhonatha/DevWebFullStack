@@ -48,4 +48,41 @@ function mouseO(){
 }
 function mouseT(){
 this.style.backgroundColor = "white"
+}   
+
+///////////////////////////////////////////////
+// Onclick - Parte 1
+function clickonbutton(botton){
+    alert("Botão clicado")
+    console.log("botão clicado")
+    botton.style.color= "red"
+}
+
+function textchange(newtext){
+    element= document.getElementById("text")
+
+element.innerText=newtext.value
+}
+
+///////////////////////////////////////////////
+// Onclick - Parte 2
+
+function mouseover(element){
+element.style.backgroundColor = "red"
+}
+
+function mouseout(element){
+element.style.backgroundColor = "blue"
+}
+
+///////////////////////////////////////////////
+// Onclick - Parte 3
+window.onload = function() {
+    alert("let's go!");
+   }
+function carregou(){
+    window.alert("aaaaaaaaaaa")
+    console.log("aaaaaaaaaaa")
+let text = document.getElementById("textoqualquer")
+text.innerHTML = "Loading";
 }
