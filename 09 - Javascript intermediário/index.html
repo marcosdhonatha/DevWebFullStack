@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body  onload="carregou()">
+<body onload="load()">
 
     <script>
-        window.onload = function () {
-            console.log("aqui")
+    //    window.onload = function () {
+    //        console.log("aqui")
 
-            let h3s= document.getElementsByTagName("h3")
-            for(let h of h3s){
-                console.log(h)
-                h.addEventListener("click", quemPai)
-            }
-        }
+    //        let h3s= document.getElementsByTagName("h3")
+    //        for(let h of h3s){
+    //            console.log(h)
+    //            h.addEventListener("click", quemPai)
+    //        }
+    //    }
         function quemPai(e){
             let t = e.target
             console.log(t.parentElement)
@@ -164,8 +164,27 @@ Digite algo aqui: <br>
 
 <h4>Eventos - Parte 3:</h4>
 
-<h4 id="textoqualquer">Texto qualquer</h4>
+<div>
 
+    id="textoqualquer">Texto qualquer
+</div>
+
+<h3>Json:</h3>
+
+<p>
+    De forma simplificada, a função JSON tem dois métodos: o JSON.parse() e o JSON.stringify()
+<br>
+O primeiro pega uma string e a transforma em objeto JSON, o segundo metodo transforma objetos em string.
+
+</p>
+
+<h3> Local Storage - Persistência dos dados</h3>
+
+<h1>Bem vindo, <h2 id="username"></h2></h1>
+
+
+<p>Digite seu nome aqui:</p>
+<input type="text" name="nome", placeholder=" digite seu nome" oninput="setName(this)">
 
 <br><br><br><br> <br><br><br><br><br><br><br>
 </html>

@@ -75,14 +75,57 @@ function mouseout(element){
 element.style.backgroundColor = "blue"
 }
 
-///////////////////////////////////////////////
-// Onclick - Parte 3
+
 window.onload = function() {
     alert("let's go!");
    }
-function carregou(){
-    window.alert("aaaaaaaaaaa")
-    console.log("aaaaaaaaaaa")
-let text = document.getElementById("textoqualquer")
-text.innerHTML = "Loading";
+
+
+
+
+///////////////////////////////////////////////
+// JSON
+console.clear()
+
+let aluno ={
+    nome: "Marcos",
+    nota:10
 }
+
+let alunoJASON = JSON.stringify(aluno)
+let aluno2 = '{"nome":"Fabio","nota":8.9}'
+
+let alunoJASON2=JSON.parse(aluno2)
+
+
+console.log(aluno)
+
+console.log(aluno2)
+
+console.log(alunoJASON)
+
+console.log(alunoJASON2)
+
+
+
+///////////////////////////////////////////////
+// Local Storage
+console.clear()
+function load() {
+
+
+
+
+let username=localStorage.getItem("username")
+
+if(username){
+ let area= document.getElementById("username")
+ area.innerHTML=username
+}
+
+}
+function setName(name) {
+    let areaName= document.getElementById("username")
+    areaName.innerHTML=name.value
+    localStorage.setItem("username", name.value)
+   }
