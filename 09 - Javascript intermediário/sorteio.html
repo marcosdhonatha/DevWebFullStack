@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> Página de sorteio</title>
+
+<script>
+    let pessoas= ["Igor", "Jose", "Marcos", "Joana", "Pamela"]
+    function sortear(){
+
+        let nPessoas= pessoas.length
+        let nSorteado=Math.floor( Math.random() * nPessoas)
+        console.log(nSorteado)
+      document.getElementById("nSorteado").innerHTML= pessoas[nSorteado]
+    }
+</script>
+    </head>
+
+    <body>
+        <h1 id="nSorteado"></h1>
+        
+<button onclick="sortear()">Sortear</button>
+    </body>
+</html>

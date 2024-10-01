@@ -12,16 +12,16 @@
 <body onload="load()">
 
     <script>
-    //    window.onload = function () {
-    //        console.log("aqui")
+        //    window.onload = function () {
+        //        console.log("aqui")
 
-    //        let h3s= document.getElementsByTagName("h3")
-    //        for(let h of h3s){
-    //            console.log(h)
-    //            h.addEventListener("click", quemPai)
-    //        }
-    //    }
-        function quemPai(e){
+        //        let h3s= document.getElementsByTagName("h3")
+        //        for(let h of h3s){
+        //            console.log(h)
+        //            h.addEventListener("click", quemPai)
+        //        }
+        //    }
+        function quemPai(e) {
             let t = e.target
             console.log(t.parentElement)
         }
@@ -80,69 +80,72 @@
             algo vai ser executado quando o mouse sair do elemento.
         </ul>
         <div class="button" onmouseover="onmouseOver(this)" onmouseout="onmouseOut(this)">botão onmouse()</div>
-       <div  id="events3">
-           <li>Eventos - parte 3</li>
-           <ul>
-               <li>Uso do onload()</li>
-               <p>Colocar funções que presisam de elementos que ainda não foram carregados 
-                   para serem "executadas" após o body ter sido carregado.
-               </p>
-               <li>element.onclick = funcaoOnclik</li>
-               Isso é feito no Javascript ou na tag script e a função não precisa de "()"
-               <li>element.addEventListener("mouseover", mouseOver)</li>
-               <li>element.addEventListener("mouseout", mouseOut)</li>
-               <p>Mais uma vez, a função não recebe parênteses e o evento não tem o prefixo "on"</p>
-           </ul>
-       </div>
-       <li> O que é o "this" </li>
-       <p>Ponteiro para o elemento</p>
-       Evita repetições, código limpo. Aconselhável usar sempre que possível.
-       <li> Tirando dúvida sobre parênteses nas funções</li>
-       <li>Comparando as maneiras de criar um evento</li>
-       <ul>
-        <li>
-            <b> addEventListener: </b>
-        </li>
-        <p> Essa função passa o objeto window como elemento this, e para acessar o elemento temos que fazer o elemento.target.</p>
-<li>evento na tag HTML</li>
-<p> A função teve ser passada com parênteses</p>
-       </ul>
-       <li> Elementos pai e filhos</li> <br><br><br>
-       <div id="div1">
-        <h3>Título qualquer 1</h3>
-        <p>Parágrafo qualquer 1</p>
-       </div>
-       <div id="div2">
-        <h3>Título qualquer 2</h3>
-        <p> Parágrafo qualquer 2</p>
-       </div>
-       <p>
-        <xmp>
-            <body onload="events()">
+        <div id="events3">
+            <li>Eventos - parte 3</li>
+            <ul>
+                <li>Uso do onload()</li>
+                <p>Colocar funções que presisam de elementos que ainda não foram carregados
+                    para serem "executadas" após o body ter sido carregado.
+                </p>
+                <li>element.onclick = funcaoOnclik</li>
+                Isso é feito no Javascript ou na tag script e a função não precisa de "()"
+                <li>element.addEventListener("mouseover", mouseOver)</li>
+                <li>element.addEventListener("mouseout", mouseOut)</li>
+                <p>Mais uma vez, a função não recebe parênteses e o evento não tem o prefixo "on"</p>
+            </ul>
+        </div>
+        <li> O que é o "this" </li>
+        <p>Ponteiro para o elemento</p>
+        Evita repetições, código limpo. Aconselhável usar sempre que possível.
+        <li> Tirando dúvida sobre parênteses nas funções</li>
+        <li>Comparando as maneiras de criar um evento</li>
+        <ul>
+            <li>
+                <b> addEventListener: </b>
+            </li>
+            <p> Essa função passa o objeto window como elemento this, e para acessar o elemento temos que fazer o
+                elemento.target.</p>
+            <li>evento na tag HTML</li>
+            <p> A função teve ser passada com parênteses</p>
+        </ul>
+        <li> Elementos pai e filhos</li> <br><br><br>
+        <div id="div1">
+            <h3>Título qualquer 1</h3>
+            <p>Parágrafo qualquer 1</p>
+        </div>
+        <div id="div2">
+            <h3>Título qualquer 2</h3>
+            <p> Parágrafo qualquer 2</p>
+        </div>
+        <p>
+            <xmp>
 
-                <script>
-                    window.onload = function () {
-                        console.log("aqui")
-            
-                        let h3s= document.getElementsByTagName("h3")
-                        for(let h of h3s){
-                            console.log(h)
-                            h.addEventListener("click", quemPai)
+                <body onload="events()">
+
+                    <script>
+                        window.onload = function () {
+                            console.log("aqui")
+
+                            let h3s = document.getElementsByTagName("h3")
+                            for (let h of h3s) {
+                                console.log(h)
+                                h.addEventListener("click", quemPai)
+                            }
                         }
-                    }
-                    function quemPai(e){
-                        let t = e.target
-                        console.log(t.parentElement)
-                    }
-                </script>
-        </xmp>
-       </p>
-       <li>Biblioteca Math</li>
+                        function quemPai(e) {
+                            let t = e.target
+                            console.log(t.parentElement)
+                        }
+                    </script>
+            </xmp>
+        </p>
+        <li>Biblioteca Math</li>
     </ol>
 </body>
 
 <h2> Pequeno resumo sobre eventos:</h2>
-<p>Após quase um mês sem estudar desenvolvimento web nesse curso, sinto que preciso de revisar os ultimos conceitos que não ficaram tão claros para mim.</p>
+<p>Após quase um mês sem estudar desenvolvimento web nesse curso, sinto que preciso de revisar os ultimos conceitos que
+    não ficaram tão claros para mim.</p>
 <h4>Eventos - Parte 1:</h4>
 
 <li>onclick()</li><br>
@@ -151,7 +154,7 @@
 
 <li>onchange()</li> <br>
 
-<h3 id="text" >Texto dinâmico</h3>
+<h3 id="text">Texto dinâmico</h3>
 Digite algo aqui: <br>
 <input id="newtext" type="text" onchange="textchange(this)">
 
@@ -173,18 +176,69 @@ Digite algo aqui: <br>
 
 <p>
     De forma simplificada, a função JSON tem dois métodos: o JSON.parse() e o JSON.stringify()
-<br>
-O primeiro pega uma string e a transforma em objeto JSON, o segundo metodo transforma objetos em string.
+    <br>
+    O primeiro pega uma string e a transforma em objeto JSON, o segundo metodo transforma objetos em string.
 
 </p>
 
 <h3> Local Storage - Persistência dos dados</h3>
 
-<h1>Bem vindo, <h2 id="username"></h2></h1>
+<h1>Bem vindo, <h2 id="username"></h2>
+</h1>
 
 
 <p>Digite seu nome aqui:</p>
-<input type="text" name="nome", placeholder=" digite seu nome" oninput="setName(this)">
+<input type="text" name="nome" , placeholder=" digite seu nome" oninput="setName(this)">
 
+
+<h2>Timer e intervalo</h2>
+
+<h3 id="texth1">Titulo</h3>
+<input onclick="mudarTextoh1()" type="submit" value="Mudar">
+<script>
+    function mudarTextoh1() {
+
+        let textH1 = document.getElementById("texth1")
+        textH1.innerHTML = "Novo titulo"
+        setTimeout(mudarCor, 1000)
+
+    }
+
+    function mudarCor() {
+
+        let textH1 = document.getElementById("texth1")
+        textH1.style.color = "blue"
+    }
+
+
+</script>
+
+<h2>Pequeno cronometro:</h2>
+
+<h3 id="timer"> </h3>
+<button onclick="iniciarContagem()">Iniciar</button>
+<button onclick="pararContagem()">Parar</button>
+
+<script> 
+    var numero=0;
+    var time
+
+    function atualizarTexto(){
+        let textTimer= document.getElementById("timer")
+textTimer.innerHTML+= " "+ numero
+numero ++
+    }
+
+function iniciarContagem(){
+    time= setInterval(atualizarTexto, 1000)
+}
+
+function pararContagem(){
+    clearInterval(time)
+}
+
+
+</script>
 <br><br><br><br> <br><br><br><br><br><br><br>
+
 </html>
